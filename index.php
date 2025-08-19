@@ -9,53 +9,21 @@
 
 <!-- koneksi database -->
 <?php
-$conn = mysqli_connect("localhost", "root", "", "dbsiswa");
-// cek koneksi
-if ($conn->connect_error) {
-  die("Koneksi gagal: " . $conn->connect_error);
-}
+include 'config.php';
 ?>
 
-
-
-<!-- menyimpan inputan -->
+<!-- proses input data -->
 <?php
-// get data dari form
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $nama = $_POST['nama'];
-  $kelas = $_POST['kelas'];
-
-  // insert data ke database
-  $sql = "INSERT INTO tbsiswa (nama, kelas) VALUES ('$nama', '$kelas')";
-  $result = mysqli_query($conn, $sql);
-
-  // cek apakah data berhasil disimpan
-  if ($result) {
-    echo "Data berhasil disimpan";
-  } else {
-    echo "Data gagal disimpan: " . mysqli_error($conn, $sql);
-  }
-}
+include 'prosesinput.php';
 ?>
-
-
-
 
 <body>
-
-
   <!-- form  -->
   <form action="" method="post">
-    <input type="text" name="nama" placeholder="Masukkan Nama Anda">
-    <input type="text" name="kelas" placeholder="Masukkan Kelas Anda">
+    <input type="text" name="nama" placeholder="Masukkan Nama Anda" required>
+    <input type="text" name="kelas" placeholder="Masukkan Kelas Anda" required>
     <input type="submit" value="Kirim Data">
   </form>
-
-
-
 </body>
-
-
-
 
 </html>
