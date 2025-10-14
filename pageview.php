@@ -13,7 +13,6 @@
    include "config.php"
    ?>
 
-
    <!-- menampilkan data -->
    <?php
    $sql = "SELECT * FROM tbsiswa";
@@ -25,6 +24,8 @@
       while ($row = mysqli_fetch_assoc($result)) {
          echo "<p>Nama: " . $row["nama"] . "</p>";
          echo "<p>Kelas: " . $row["kelas"] . "</p>";
+         // fungsi hapus
+         echo "<a href='hapus.php?id=" . $row["id"] . "'>Hapus</a>";
       }
    } else {
       // jika tidak ada data
@@ -32,7 +33,6 @@
    }
    // tutup koneksi
    mysqli_close($conn);
-
 
    ?>
 </body>
