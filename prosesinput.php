@@ -17,8 +17,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // cek apakah data berhasil disimpan
     if ($result) {
+        
         // redirect ke halaman index.php
-        header("Location: index.php");
+        header("Location: pageview.php");
         exit();
     } else {
         echo "Data gagal disimpan: " . mysqli_error($conn, $sql);
