@@ -1,8 +1,3 @@
----
-title: Task 1 - CRUD
-description: CRUD Fundamental (Native PHP)
----
-
 # 🧩 CRUD Fundamental (Native PHP)
 
 ## 📌 Pengertian CRUD
