@@ -6,11 +6,13 @@ description: CRUD Fundamental (Native PHP)
 # 🧩 CRUD Fundamental (Native PHP)
 
 ## 📌 Pengertian CRUD
+
 **CRUD** adalah singkatan dari:
+
 - **Create** → menambahkan data
 - **Read** → menampilkan data
 - **Update** → mengubah data
-- **Delete** → menghapus data  
+- **Delete** → menghapus data
 
 CRUD merupakan **konsep dasar** dalam pengelolaan data pada hampir semua aplikasi berbasis database.
 
@@ -18,6 +20,7 @@ CRUD merupakan **konsep dasar** dalam pengelolaan data pada hampir semua aplikas
 
 ## 📂 Struktur Project
 
+```
 crud-php-sederhana/
 │
 ├── index.php
@@ -27,7 +30,7 @@ crud-php-sederhana/
 ├── koneksi.php
 │
 └── database.sql
-
+```
 
 ---
 
@@ -78,6 +81,7 @@ crud-php-sederhana/
 ## 🎯 Tujuan Pembelajaran
 
 Setelah menyelesaikan task ini, siswa mampu:
+
 - Memahami konsep dasar CRUD
 - Menghubungkan PHP dengan database MySQL
 - Mengelola data menggunakan PHP native
@@ -86,8 +90,9 @@ Setelah menyelesaikan task ini, siswa mampu:
 ---
 
 ## 📌 Catatan Penting
+
 - Menggunakan **PHP Native (tanpa framework)**
 - Fokus pada **logika CRUD**
-- Struktur sederhana agar mudah dipahami pemula
+- Struktur sederhana agar mudah dipahami
 
 ---
